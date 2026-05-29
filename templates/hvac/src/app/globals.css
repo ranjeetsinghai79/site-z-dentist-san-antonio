@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Rubik:wght@500;700;800;900&display=swap');
+@import "tailwindcss";
+@source "../../../../packages/core/src";
+@import "@core/web/styles";
+
+/* ═══════════════════════════════════════════════════════════════
+   HVAC · niche overrides (data-theme="navy")
+   ═══════════════════════════════════════════════════════════════ */
+.loading-screen { background: var(--brand-bg); }
+.loading-screen .aurora-blob { background: var(--brand-blob-1); }

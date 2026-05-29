@@ -1,0 +1,29 @@
+{
+  "name": "websitedeveloper",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "templates/*",
+    "pipeline"
+  ],
+  "scripts": {
+    "pipeline": "npm run start --workspace=pipeline",
+    "pipeline:dry": "npm run dry-run --workspace=pipeline",
+    "pipeline:auto": "cd pipeline && npx tsx src/auto-run.ts",
+    "dev:hvac": "npm run dev --workspace=templates/hvac",
+    "dev:restaurant": "npm run dev --workspace=templates/restaurant",
+    "dev:roofing": "npm run dev --workspace=templates/roofing",
+    "dev:dentist": "npm run dev --workspace=templates/dentist",
+    "dev:medspa": "npm run dev --workspace=templates/medspa",
+    "dev:lawfirm": "npm run dev --workspace=templates/lawfirm",
+    "dev:remodeling": "npm run dev --workspace=templates/remodeling",
+    "dev:cleaning": "npm run dev --workspace=templates/cleaning",
+    "dev:junk-removal": "npm run dev --workspace=templates/junk-removal",
+    "dev:daycare": "npm run dev --workspace=templates/daycare",
+    "dev:auto-detailing": "npm run dev --workspace=templates/auto-detailing",
+    "dev:luxury-realestate": "npm run dev --workspace=templates/luxury-realestate",
+    "dev:landing": "cd my-website && next dev -p 3001",
+    "dev:webcrew": "cd webcrew && next dev -p 3002"
+  }
+}

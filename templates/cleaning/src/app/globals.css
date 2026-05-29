@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap');
+@import "tailwindcss";
+@source "../../../../packages/core/src";
+@import "@core/web/styles";
+
+/* ═══════════════════════════════════════════════════════════════
+   cleaning · niche overrides (data-theme="ocean")
+   ═══════════════════════════════════════════════════════════════ */
+.loading-screen { background: var(--brand-bg); }
+.loading-screen .aurora-blob { background: var(--brand-blob-1); }

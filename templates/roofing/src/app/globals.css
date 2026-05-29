@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@source "../../../../packages/core/src";
+@import "@core/web/styles";
+
+/* ═══════════════════════════════════════════════════════════════
+   roofing · niche overrides (data-theme="ember")
+   ═══════════════════════════════════════════════════════════════ */
+.loading-screen { background: var(--brand-bg); }
+.loading-screen .aurora-blob { background: var(--brand-blob-1); }
